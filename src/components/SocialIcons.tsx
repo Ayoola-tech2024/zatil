@@ -40,7 +40,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     name: "Instagram",
-    href: "https://instagram.com/zatilgroupng",
+    href: "https://www.instagram.com/zatilgroup/",
     icon: InstagramIcon,
     label: "Zatil Group Instagram",
   },
