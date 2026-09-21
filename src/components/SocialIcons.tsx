@@ -52,7 +52,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/company/zatilgroup",
+    href: "https://ng.linkedin.com/company/zatil-group",
     icon: LinkedinIcon,
     label: "Zatil Group LinkedIn",
   },
