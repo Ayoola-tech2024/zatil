@@ -43,7 +43,7 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="focus:outline-none">
+          <Link href="/" className="focus:outline-none flex-shrink-0">
             <ZatilLogo variant={isScrolled ? "light" : "dark"} />
           </Link>
 
