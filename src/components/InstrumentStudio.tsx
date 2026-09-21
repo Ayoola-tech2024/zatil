@@ -21,7 +21,7 @@ export default function InstrumentStudio({ onOpenQuoteModal }: InstrumentStudioP
       wood: "Seasoned African Spruce Top & Tone Hardwood Back",
       finish: "Hand-Rubbed Amber Oil Varnish",
       fittings: "Madagascar Ebony Pegs, Fingerboard & Chinrest",
-      image: "/images/zatil/showcase/sounds-about-right-4-01.jpg",
+      image: "/images/instruments/zatil-violin.jpg",
       lead: "Artisan-carved in Akure for cathedral soloists, orchestral concertmasters, and advanced students seeking effortless projection and tropical climatic stability.",
       specs: [
         "Acoustic Spruce Soundboard conditioned for humidity resilience",
@@ -39,7 +39,7 @@ export default function InstrumentStudio({ onOpenQuoteModal }: InstrumentStudioP
       wood: "Seasoned African Hardwood & Flamed Ribs",
       finish: "Hand-Applied Golden Honey Lacquer",
       fittings: "Ebony Fingerboard & 4-Fine-Tuner Tailpiece",
-      image: "/images/zatil/showcase/sounds-about-right-4-03.jpg",
+      image: "/images/instruments/zatil-viola.jpg",
       lead: "Engineered with an enlarged internal chamber depth for rich lower-register resonance in worship sanctuaries, classical quartets, and chamber ensembles.",
       specs: [
         "Enlarged air chamber for rich, dark C-string resonance",
