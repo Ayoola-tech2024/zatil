@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Image from "next/image";
 import { ArrowRight, Sparkles, Volume2, Shield, CheckCircle2 } from "lucide-react";
 
 interface InstrumentStudioProps {
@@ -20,6 +21,7 @@ export default function InstrumentStudio({ onOpenQuoteModal }: InstrumentStudioP
       wood: "Seasoned African Spruce Top & Tone Hardwood Back",
       finish: "Hand-Rubbed Amber Oil Varnish",
       fittings: "Madagascar Ebony Pegs, Fingerboard & Chinrest",
+      image: "/images/zatil/showcase/sounds-about-right-4-01.jpg",
       lead: "Artisan-carved in Akure for cathedral soloists, orchestral concertmasters, and advanced students seeking effortless projection and tropical climatic stability.",
       specs: [
         "Acoustic Spruce Soundboard conditioned for humidity resilience",
@@ -27,7 +29,6 @@ export default function InstrumentStudio({ onOpenQuoteModal }: InstrumentStudioP
         "Includes hard flight case, octagonal brazilwood bow & rosin",
         "6-Month complimentary setup & tonal adjustment included",
       ],
-      colorAccent: "from-orange-500 to-amber-600",
     },
     {
       id: "viola",
@@ -38,6 +39,7 @@ export default function InstrumentStudio({ onOpenQuoteModal }: InstrumentStudioP
       wood: "Seasoned African Hardwood & Flamed Ribs",
       finish: "Hand-Applied Golden Honey Lacquer",
       fittings: "Ebony Fingerboard & 4-Fine-Tuner Tailpiece",
+      image: "/images/zatil/showcase/sounds-about-right-4-03.jpg",
       lead: "Engineered with an enlarged internal chamber depth for rich lower-register resonance in worship sanctuaries, classical quartets, and chamber ensembles.",
       specs: [
         "Enlarged air chamber for rich, dark C-string resonance",
@@ -45,7 +47,6 @@ export default function InstrumentStudio({ onOpenQuoteModal }: InstrumentStudioP
         "Durable lightweight travel flight case & balanced bow",
         "6-Month complimentary setup & tonal adjustment included",
       ],
-      colorAccent: "from-amber-600 to-yellow-600",
     },
     {
       id: "cello",
@@ -56,6 +57,7 @@ export default function InstrumentStudio({ onOpenQuoteModal }: InstrumentStudioP
       wood: "Aged Acoustic Tonewood & Solid Hardwood",
       finish: "Traditional Deep Amber Varnish",
       fittings: "Ebony Fingerboard & Heavy Brass Endpin",
+      image: "/images/zatil/showcase/sounds-about-right-4-05.jpg",
       lead: "Commanding cello designed with reinforced internal bass-bar bracing to project effortlessly across large cathedral halls without acoustic compression or distortion.",
       specs: [
         "Reinforced bass-bar for powerful, distortion-free low end",
@@ -63,7 +65,6 @@ export default function InstrumentStudio({ onOpenQuoteModal }: InstrumentStudioP
         "Padded high-denier water-resistant gig case & concert bow",
         "6-Month complimentary setup & tonal adjustment included",
       ],
-      colorAccent: "from-orange-600 to-rose-700",
     },
     {
       id: "double-bass",
@@ -74,6 +75,7 @@ export default function InstrumentStudio({ onOpenQuoteModal }: InstrumentStudioP
       wood: "Solid Acoustic Tonewood with Heavy Bracing",
       finish: "Satin Walnut & Hardwood Protective Oil",
       fittings: "Heavy-Duty Brass Tuning Machine Gears",
+      image: "/images/zatil/showcase/sounds-about-right-5-04.jpg",
       lead: "Massive acoustic foundation delivering thunderous projection and warmth. Built with reinforced joints specifically tempered for tropical temperature shifts.",
       specs: [
         "Solid tonewood soundboard with heavy-duty internal bracing",
@@ -81,7 +83,6 @@ export default function InstrumentStudio({ onOpenQuoteModal }: InstrumentStudioP
         "Reinforced transport bag with double-padded accessory pouches",
         "6-Month complimentary setup & tonal adjustment included",
       ],
-      colorAccent: "from-neutral-800 to-neutral-950",
     },
   ];
 
@@ -102,7 +103,7 @@ export default function InstrumentStudio({ onOpenQuoteModal }: InstrumentStudioP
             </h2>
           </div>
           <p className="text-sm text-neutral-500 max-w-md leading-relaxed">
-            Hand-carved in Akure from seasoned African acoustic tonewoods. Select an instrument to explore acoustic profiling and build specifications.
+            Hand-carved at 39 Yaba Street atelier in Akure from seasoned African acoustic tonewoods. Select an instrument to view real workshop lutherie and acoustic profiling.
           </p>
         </div>
 
@@ -112,7 +113,7 @@ export default function InstrumentStudio({ onOpenQuoteModal }: InstrumentStudioP
             <button
               key={inst.id}
               onClick={() => setActiveTab(idx)}
-              className={`p-4 sm:p-5 text-left rounded-2xl border transition-all ${
+              className={`p-4 sm:p-5 text-left rounded-2xl border transition-all cursor-pointer ${
                 activeTab === idx
                   ? "bg-[#0A0A0A] text-white border-black shadow-xl"
                   : "bg-neutral-50 hover:bg-neutral-100 text-neutral-700 border-neutral-200"
@@ -132,39 +133,41 @@ export default function InstrumentStudio({ onOpenQuoteModal }: InstrumentStudioP
         </div>
 
         {/* Studio Showcase Display */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 bg-neutral-50 border border-neutral-200 p-8 sm:p-12 rounded-3xl items-center">
-          {/* Visual Showcase Frame */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 bg-neutral-50 border border-neutral-200 p-6 sm:p-12 rounded-3xl items-center">
+          {/* Visual Showcase Frame with Real Atelier Photo */}
           <div className="lg:col-span-5 relative">
-            <div className="h-72 sm:h-96 rounded-2xl bg-gradient-to-br from-neutral-900 via-neutral-800 to-black text-white p-8 flex flex-col justify-between relative overflow-hidden shadow-2xl">
-              {/* Abstract Acoustic Tone Wave Background */}
-              <div className="absolute top-0 right-0 w-64 h-64 bg-orange-500/15 rounded-full blur-3xl" />
+            <div className="h-80 sm:h-[440px] rounded-2xl overflow-hidden relative shadow-2xl group border border-neutral-300 bg-black">
+              <Image
+                src={current.image}
+                alt={current.name}
+                fill
+                className="object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/40" />
               
-              <div className="flex items-center justify-between z-10">
-                <span className="text-xs font-mono font-bold text-[#FFA726] bg-white/10 px-3 py-1 rounded-full uppercase">
+              {/* Top Tag */}
+              <div className="absolute top-4 left-4 right-4 flex items-center justify-between z-10">
+                <span className="text-xs font-mono font-bold text-[#FFA726] bg-black/70 backdrop-blur-md px-3 py-1 rounded-full uppercase border border-white/10">
                   Akure Master Build
                 </span>
-                <div className="flex items-center gap-1.5 text-xs text-neutral-400">
-                  <Volume2 className="w-4 h-4 text-[#7CB342]" />
+                <div className="flex items-center gap-1.5 text-xs text-white bg-black/70 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/10">
+                  <Volume2 className="w-3.5 h-3.5 text-[#7CB342]" />
                   <span>Acoustic Voicing</span>
                 </div>
               </div>
 
-              {/* Central Typographic Showcase */}
-              <div className="z-10 my-auto py-6">
-                <span className="text-[11px] font-mono text-neutral-400 uppercase tracking-widest block mb-1">
+              {/* Bottom Acoustic Summary */}
+              <div className="absolute bottom-4 left-4 right-4 z-10 space-y-1">
+                <span className="text-[10px] font-mono text-neutral-300 uppercase tracking-widest block">
                   Acoustic Signature
                 </span>
-                <h4 className="text-2xl sm:text-3xl font-black text-white uppercase tracking-tight">
+                <h4 className="text-xl sm:text-2xl font-black text-white uppercase tracking-tight">
                   {current.acousticProfile}
                 </h4>
-                <p className="text-xs text-neutral-300 mt-2 font-mono">
+                <p className="text-[11px] text-neutral-300 font-mono pt-1">
                   Tonewood: {current.wood}
                 </p>
-              </div>
-
-              <div className="flex items-center justify-between z-10 pt-4 border-t border-white/10 text-xs text-neutral-300">
-                <span>{current.finish}</span>
-                <span className="font-bold text-[#7CB342]">100% African Seasoned</span>
               </div>
             </div>
           </div>
@@ -196,13 +199,13 @@ export default function InstrumentStudio({ onOpenQuoteModal }: InstrumentStudioP
             <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <button
                 onClick={() => onOpenQuoteModal(current.name)}
-                className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-[#0A0A0A] hover:bg-neutral-800 text-white text-xs font-bold uppercase tracking-wider transition-all shadow-md"
+                className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-full bg-[#0A0A0A] hover:bg-neutral-800 text-white text-xs font-bold uppercase tracking-wider transition-all shadow-md cursor-pointer"
               >
                 <span>Request Commission Pricing</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
 
-              <div className="inline-flex items-center gap-2 text-xs text-neutral-500 font-semibold px-4 py-3 bg-white rounded-full border border-neutral-200">
+              <div className="inline-flex items-center gap-2 text-xs text-neutral-600 font-semibold px-4 py-3 bg-white rounded-full border border-neutral-200">
                 <Shield className="w-4 h-4 text-[#7CB342]" />
                 <span>Includes 6-Month Free Restoration Warranty</span>
               </div>

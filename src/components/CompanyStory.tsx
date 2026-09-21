@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import { Award, CheckCircle2 } from "lucide-react";
 
 export default function CompanyStory() {
   const chapters = [
@@ -51,8 +53,8 @@ export default function CompanyStory() {
           </p>
         </div>
 
-        {/* Timeline Row (No Box Cards) */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-20 border-b border-neutral-200 pb-16">
+        {/* Timeline Row */}
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-16 border-b border-neutral-200 pb-16">
           {chapters.map((chap, idx) => (
             <div key={idx} className="space-y-2">
               <span className="text-xs font-mono font-bold text-[#F26522] block">
@@ -66,6 +68,30 @@ export default function CompanyStory() {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* Award Highlight Banner */}
+        <div className="mb-20 bg-amber-500/10 border border-amber-500/30 rounded-3xl p-6 sm:p-8 flex flex-col md:flex-row items-center gap-6 justify-between">
+          <div className="flex items-start gap-4">
+            <div className="p-3 bg-amber-500 text-black rounded-2xl flex-shrink-0">
+              <Award className="w-6 h-6" />
+            </div>
+            <div>
+              <span className="text-[10px] font-mono uppercase font-bold text-amber-700 tracking-wider">
+                Official Industry Recognition • 2020
+              </span>
+              <h4 className="text-base sm:text-lg font-bold text-[#0A0A0A] mt-0.5">
+                Southwest Nigeria Outstanding Musical Equipment Manufacturing Company
+              </h4>
+              <p className="text-xs text-neutral-600 mt-1 max-w-2xl">
+                Honoring Zatil Group for pioneering indigenous production of classical bowed strings and cathedral pipe organ facades across West Africa.
+              </p>
+            </div>
+          </div>
+          <div className="flex-shrink-0 flex items-center gap-2 text-xs font-mono font-bold text-neutral-700 bg-white px-4 py-2 rounded-xl border border-amber-500/20">
+            <CheckCircle2 className="w-4 h-4 text-[#7CB342]" />
+            <span>Verified Industry Merit</span>
+          </div>
         </div>
 
         {/* Leadership Row */}
