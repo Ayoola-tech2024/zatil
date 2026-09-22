@@ -6,7 +6,7 @@ import Hero from "@/components/Hero";
 import InstrumentStudio from "@/components/InstrumentStudio";
 import OrganMilestone from "@/components/OrganMilestone";
 import BentoServices from "@/components/BentoServices";
-import ImpactCircular from "@/components/ImpactCircular";
+import WhyZatil from "@/components/WhyZatil";
 import PhotoGallery from "@/components/PhotoGallery";
 import CompanyStory from "@/components/CompanyStory";
 import QuoteModal from "@/components/QuoteModal";
@@ -30,32 +30,32 @@ export default function HomePage() {
   };
 
   return (
-    <main className="min-h-screen bg-white text-[#0A0A0A] overflow-x-hidden">
-      {/* Minimalist Top Navigation */}
+    <main className="min-h-screen bg-white text-[#111827] overflow-x-hidden">
+      {/* Frosted Glass Navigation */}
       <Navbar onOpenQuoteModal={() => handleOpenQuote()} />
 
-      {/* Hero Section with Integrated Metrics Ledger */}
+      {/* Hero Section */}
       <Hero onOpenQuoteModal={() => handleOpenQuote()} />
 
-      {/* Interactive Instrument Studio (Tabbed Switcher, Zero Box Cards) */}
+      {/* Handcrafted String Instruments */}
       <InstrumentStudio onOpenQuoteModal={(prod) => handleOpenQuote(prod)} />
 
-      {/* 51st Pipe Organ Milestone & Monograph Feature */}
+      {/* 51+ Church Pipe Organ Installations */}
       <OrganMilestone onOpenQuoteModal={() => handleOpenQuote("Pipe Organ Façade Installation")} />
 
-      {/* Manufacturing Capabilities & Practice (Numbered Editorial List) */}
+      {/* Specialized Services & Capabilities */}
       <BentoServices onOpenQuoteModal={(svc) => handleOpenQuote(svc)} />
 
-      {/* Sustainability, Circular Economy & Multiplier */}
-      <ImpactCircular />
+      {/* Why Nigerian Churches & Musicians Choose Zatil */}
+      <WhyZatil onOpenQuoteModal={() => handleOpenQuote()} />
 
-      {/* Project Archive (Clean Index Rows) */}
+      {/* Visual Project Portfolio & Photo Archive */}
       <PhotoGallery />
 
-      {/* Heritage & Leadership Timeline */}
+      {/* Heritage, Lineage & Leadership */}
       <CompanyStory />
 
-      {/* Lead Generation & Consultation Modal */}
+      {/* Consultation & Quote Modal */}
       <QuoteModal
         isOpen={quoteModalOpen}
         onClose={handleCloseQuote}
