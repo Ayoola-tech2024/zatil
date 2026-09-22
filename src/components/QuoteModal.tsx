@@ -68,7 +68,7 @@ export default function QuoteModal({
               Request a Project Quote
             </h3>
             <p className="text-xs text-neutral-500 mt-1">
-              Connect directly with our master craftsmen in Akure.
+              Connect directly with our master craftsmen and acoustic engineers.
             </p>
           </div>
           <button

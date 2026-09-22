@@ -50,7 +50,7 @@ export default function ProductCatalog({ onOpenQuoteModal }: ProductCatalogProps
             Handcrafted Bowed String Instruments
           </h2>
           <p className="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed">
-            Every stringed instrument leaving our Akure workshop is built with seasoned African acoustic tonewoods conditioned for tropical climatic durability.
+            Every stringed instrument crafted in our atelier is built with seasoned African acoustic tonewoods conditioned for tropical climatic durability.
           </p>
         </div>
 

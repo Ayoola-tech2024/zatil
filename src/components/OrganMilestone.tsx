@@ -63,7 +63,7 @@ export default function OrganMilestone({ onOpenQuoteModal }: OrganMilestoneProps
     { num: "01", title: "CAD & Sanctuary Survey", desc: "Acoustic modeling customized to church chancel width & vault ceiling height." },
     { num: "02", title: "Casework Joinery", desc: "Solid seasoned hardwood chassis engineered for structural pipe support." },
     { num: "03", title: "Staining & Pipe Gilding", desc: "Casework staining harmonized with sanctuary interior woodwork." },
-    { num: "04", title: "Nationwide Transit", desc: "Secure logistical transit directly from our 39 Yaba Street atelier in Akure." },
+    { num: "04", title: "Nationwide Transit", desc: "Secure specialized logistical transit directly from our manufacturing atelier to the cathedral site." },
     { num: "05", title: "On-Site Erection & Rigging", desc: "Precision assembly and mounting by master luthier technicians." },
     { num: "06", title: "Console Voicing & Testing", desc: "Acoustic coupling and stop balancing for Viscount, Allen, Johannus & AltusKlass." },
   ];
@@ -187,7 +187,7 @@ export default function OrganMilestone({ onOpenQuoteModal }: OrganMilestoneProps
               The 6-Phase Engineering Pipeline
             </h3>
             <span className="text-xs font-mono text-slate-400">
-              39 Yaba Street Workshop to Cathedral Chancel
+              Master Workshop to Cathedral Chancel
             </span>
           </div>
 

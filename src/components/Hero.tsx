@@ -137,7 +137,7 @@ export default function Hero({ onOpenQuoteModal }: HeroProps) {
               Craft Workforce
             </span>
             <span className="text-[11px] text-slate-300 block">
-              Akure facility crew
+              Master craft collective
             </span>
           </div>
         </div>

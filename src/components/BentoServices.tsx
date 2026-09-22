@@ -15,7 +15,7 @@ export default function BentoServices({ onOpenQuoteModal }: BentoServicesProps) 
       num: "01",
       title: "Bespoke Stringed Instruments",
       subtitle: "Violins • Violas • Cellos • Double Basses",
-      desc: "Handcrafted in Akure with seasoned African acoustic tonewoods. Specially conditioned for African climates with protective flight cases and a 6-month free restoration warranty.",
+      desc: "Master-crafted with seasoned African acoustic tonewoods. Specially conditioned for tropical African climates with protective flight cases and a 6-month free restoration warranty.",
       details: "Includes custom neck cambering, hand-rubbed amber varnish, and precision soundpost voicing tailored to student, orchestra, or cathedral soloist requirements.",
     },
     {
@@ -75,7 +75,7 @@ export default function BentoServices({ onOpenQuoteModal }: BentoServicesProps) 
             </h2>
           </div>
           <p className="text-sm text-neutral-500 max-w-md leading-relaxed">
-            From handcrafted violins to cathedral pipe organ installations, our Akure facility connects traditional woodworking with modern engineering.
+            From handcrafted violins to monumental cathedral pipe organ installations, our manufacturing collective connects indigenous African woodworking with modern acoustic engineering.
           </p>
         </div>
 

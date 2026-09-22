@@ -22,7 +22,7 @@ export default function InstrumentStudio({ onOpenQuoteModal }: InstrumentStudioP
       finish: "Hand-Rubbed Amber Oil Varnish",
       fittings: "Madagascar Ebony Pegs, Fingerboard & Chinrest",
       image: "/images/instruments/zatil-violin.jpg",
-      lead: "Artisan-carved in Akure for cathedral soloists, orchestral concertmasters, and advanced students seeking effortless projection and tropical climatic stability.",
+      lead: "Master-crafted for cathedral soloists, orchestral concertmasters, and advanced musicians seeking effortless acoustic projection and tropical climatic stability.",
       specs: [
         "Acoustic Spruce Soundboard conditioned for humidity resilience",
         "Ebony fingerboard planed to 0.5mm precision camber",
@@ -103,7 +103,7 @@ export default function InstrumentStudio({ onOpenQuoteModal }: InstrumentStudioP
             </h2>
           </div>
           <p className="text-sm text-neutral-500 max-w-md leading-relaxed">
-            Hand-carved at 39 Yaba Street atelier in Akure from seasoned African acoustic tonewoods. Select an instrument to view real workshop lutherie and acoustic profiling.
+            Handcrafted from seasoned African acoustic tonewoods conditioned for tropical climatic resilience. Select an instrument to view master lutherie specifications and acoustic profiling.
           </p>
         </div>
 
@@ -149,7 +149,7 @@ export default function InstrumentStudio({ onOpenQuoteModal }: InstrumentStudioP
               {/* Top Tag */}
               <div className="absolute top-4 left-4 right-4 flex items-center justify-between z-10">
                 <span className="text-xs font-mono font-bold text-[#FFA726] bg-black/70 backdrop-blur-md px-3 py-1 rounded-full uppercase border border-white/10">
-                  Akure Master Build
+                  Master Artisan Build
                 </span>
                 <div className="flex items-center gap-1.5 text-xs text-white bg-black/70 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/10">
                   <Volume2 className="w-3.5 h-3.5 text-[#7CB342]" />

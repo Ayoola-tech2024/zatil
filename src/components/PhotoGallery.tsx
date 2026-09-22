@@ -201,7 +201,7 @@ export default function PhotoGallery() {
                 </div>
 
                 <div className="p-6 pt-0 border-t border-neutral-200/70 mt-2 flex items-center justify-between text-xs font-mono">
-                  <span className="text-neutral-400">Handcrafted in Akure</span>
+                  <span className="text-neutral-400">Master Atelier Showcase</span>
                   <span className="text-[#F26522] font-bold">Showcase ↗</span>
                 </div>
               </div>

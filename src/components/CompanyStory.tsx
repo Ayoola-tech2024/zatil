@@ -6,28 +6,28 @@ export default function CompanyStory() {
   const chapters = [
     {
       era: "01. ORIGINS",
-      title: "Family Craftsmanship Heritage",
-      narrative: "Deep family experience in fine woodwork and acoustic instruments laid the groundwork for an indigenous Nigerian lutherie tradition.",
+      title: "Generational Family Craft",
+      narrative: "Deep generational family mastery in fine woodwork and acoustic instruments laid the foundation for an indigenous African lutherie tradition.",
     },
     {
-      era: "02. ESTABLISHED",
-      title: "Akure Workshop Founded",
-      narrative: "Founded on the core belief that high-quality concert instruments and specialist church infrastructure can be built and maintained locally.",
+      era: "02. INDIGENOUS CAPACITY",
+      title: "Pioneering African Lutherie",
+      narrative: "Founded on the conviction that world-class concert instruments and complex cathedral organ façades can be engineered and built right here in Africa.",
     },
     {
       era: "03. INNOVATION",
-      title: "Pipe-Organ Façades",
-      narrative: "Pioneered decorative organ façade engineering in Nigeria, creating monumental installations for cathedrals nationwide.",
+      title: "Architectural Pipe Façades",
+      narrative: "Pioneered monumental decorative organ façade engineering, harmonizing acoustic throw with high-vaulted cathedral architecture nationwide.",
     },
     {
-      era: "04. EXPANSION",
+      era: "04. CONTINENTAL SCALE",
       title: "500+ Instruments & 51+ Organs",
-      narrative: "Expanded across 11+ states with a dedicated 26-person team of master craftsmen, apprentices, and acoustic field engineers.",
+      narrative: "Servicing institutions and concert halls across 11+ states with a dedicated 26-person master luthier collective and field engineering crew.",
     },
     {
-      era: "05. FUTURE",
-      title: "Circular Pan-African Impact",
-      narrative: "Integrating tonewood recovery, zero-waste restoration, and youth apprenticeships to solidify Africa's capacity to build its own sound.",
+      era: "05. THE VISION",
+      title: "Building Africa’s Sound",
+      narrative: "Advancing seasoned African tonewood stewardship, zero-waste restoration, and youth apprenticeships to power Africa's musical independence.",
     },
   ];
 
@@ -46,10 +46,10 @@ export default function CompanyStory() {
             Heritage & Lineage
           </span>
           <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-[#0A0A0A] uppercase mt-1">
-            From Family Craft to African Manufacturing
+            From Family Craft to Continental Manufacturing
           </h2>
           <p className="mt-4 text-sm sm:text-base text-neutral-600 leading-relaxed">
-            Zatil Group is an indigenous Nigerian musical instrument manufacturing company based in Akure, Ondo State. We combine classical lutherie, modern acoustic engineering, and technical training.
+            Zatil Group is an indigenous Nigerian musical instrument manufacturing and acoustic engineering company. We combine classical lutherie heritage, precision acoustic science, and industrial craftsmanship to service Africa's cathedral and musical infrastructure.
           </p>
         </div>
 
@@ -81,7 +81,7 @@ export default function CompanyStory() {
                 Official Industry Recognition • 2020
               </span>
               <h4 className="text-base sm:text-lg font-bold text-[#0A0A0A] mt-0.5">
-                Southwest Nigeria Outstanding Musical Equipment Manufacturing Company
+                Outstanding Musical Equipment Manufacturing Company
               </h4>
               <p className="text-xs text-neutral-600 mt-1 max-w-2xl">
                 Honoring Zatil Group for pioneering indigenous production of classical bowed strings and cathedral pipe organ facades across West Africa.

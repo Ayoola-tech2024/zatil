@@ -71,7 +71,7 @@ export default function WhoWeServe() {
                 </div>
 
                 <div className="mt-5 pt-3 border-t border-white/10 text-xs text-[#FFA726] font-semibold">
-                  Akure Support Backed →
+                  Lifetime Support Backed →
                 </div>
               </div>
             );

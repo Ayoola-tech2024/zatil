@@ -154,7 +154,7 @@ export default function Navbar({ onOpenQuoteModal }: NavbarProps) {
               className="flex items-center justify-center gap-2 w-full py-3 bg-black/5 hover:bg-black/10 text-neutral-800 text-xs font-bold uppercase rounded-xl transition-colors"
             >
               <Phone className="w-4 h-4 text-[#F26522]" />
-              <span>Call Akure: 0803 081 4281</span>
+              <span>Direct Hotline: 0803 081 4281</span>
             </a>
             <button
               onClick={() => {

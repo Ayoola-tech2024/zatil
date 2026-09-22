@@ -2,12 +2,12 @@ import React from "react";
 
 export default function StatsCounter() {
   const metrics = [
-    { num: "10+", label: "Years Experience", desc: "Continuous Nigerian production" },
+    { num: "10+", label: "Years Experience", desc: "Continuous African production" },
     { num: "51+", label: "Organ Façades", desc: "Installed in Cathedrals & Churches" },
     { num: "500+", label: "String Instruments", desc: "Violins, Violas, Cellos & Basses" },
     { num: "400+", label: "Audio Speakers", desc: "Acoustic institutional sound" },
     { num: "11+", label: "States Reached", desc: "Active across Nigerian regions" },
-    { num: "26", label: "Craft Workforce", desc: "Akure facility luthiers & crew" },
+    { num: "26", label: "Craft Workforce", desc: "Master luthiers & field crew" },
   ];
 
   return (
@@ -34,7 +34,7 @@ export default function StatsCounter() {
             * Selected figures based on Zatil Group's internal business records & project archive.
           </p>
           <span className="text-[#7CB342] font-semibold">
-            📍 Akure Manufacturing Facility, Ondo State
+            📍 Indigenous Manufacturing Facility • Made in Nigeria
           </span>
         </div>
       </div>
